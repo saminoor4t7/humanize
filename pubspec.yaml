@@ -1,0 +1,27 @@
+name: humanize
+description: Humanize - offline LAN file transfer for Windows and Android.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.5.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.1.2            # MVVM: ChangeNotifier ViewModels
+  shared_preferences: ^2.3.2  # Settings + trusted devices
+  path_provider: ^2.1.4       # Default downloads dir, app-support dir
+  path: ^1.9.0
+  crypto: ^3.0.5              # SHA-256 (file integrity, fingerprints)
+  basic_utils: ^5.7.0         # RSA key pair + self-signed X.509 for TLS, RSA sign/verify
+  pointycastle: ^3.9.1        # RSA key types used with basic_utils
+  file_picker: ^8.1.2         # File and folder pickers
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
